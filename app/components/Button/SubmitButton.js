@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { Text, TouchableOpacity, Image, View } from "react-native";
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Text, TouchableOpacity, Image, View } from 'react-native';
 
-import styles from "./styles";
+import styles from './styles';
 
 const SubmitButton = ({ text, onPress }) => (
   <TouchableOpacity style={styles.touchable} onPress={onPress}>
@@ -14,7 +14,7 @@ const SubmitButton = ({ text, onPress }) => (
 
 SubmitButton.propTypes = {
   text: PropTypes.string,
-  onPress: PropTypes.func
+  onPress: PropTypes.func,
 };
 
 export default SubmitButton;

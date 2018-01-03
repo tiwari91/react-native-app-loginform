@@ -5,11 +5,14 @@ import {
   View,
   TouchableOpacity,
   Text,
-  SafeAreaView
+  SafeAreaView,
+  TextInput
 } from "react-native";
 
 import EStyleSheet from "react-native-extended-stylesheet";
 import SubmitButton from "../components/Button/SubmitButton";
+import InputWithButton from "../components/TextInput/InputWithButton";
+import Header from "../components/Header/Header";
 
 class Home extends Component {
   handleSignIn = () => {
@@ -19,9 +22,15 @@ class Home extends Component {
     return (
       <SafeAreaView style={styles.container}>
         <StatusBar backgroundColor="blue" barStyle="light-content" />
+
+        <Header />
+
         <KeyboardAvoidingView behavior="padding">
-          <SubmitButton text="Sign In" onPress={this.handleSignIn} />
+          <InputWithButton placeholderText="email" />
+          <InputWithButton placeholderText="password" secureTextEntry={true} />
         </KeyboardAvoidingView>
+
+        <SubmitButton text="Sign In" onPress={this.handleSignIn} />
       </SafeAreaView>
     );
   }
