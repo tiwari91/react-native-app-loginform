@@ -10,10 +10,10 @@ const Home = () => (
   <Container>
     <Header />
     <Image
-        source={require('../../assets/planet.png')}
-        style={{ height: 130, marginBottom: 60, marginTop: 60 }}
-        resizeMode="contain"
-      />
+      source={require('../../assets/planet.png')}
+      style={{ height: 130, marginBottom: 60, marginTop: 60 }}
+      resizeMode="contain"
+    />
     <InputWithButton placeholderText="email" />
     <InputWithButton placeholderText="password" secureTextEntry />
 
