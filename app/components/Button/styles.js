@@ -1,18 +1,18 @@
-import EStyleSheet from "react-native-extended-stylesheet";
+import EStyleSheet from 'react-native-extended-stylesheet';
 
 export default EStyleSheet.create({
   touchable: {
-    marginHorizontal: 50
+    marginHorizontal: 50,
   },
   button: {
-    backgroundColor: "$green",
+    backgroundColor: '$green',
     paddingVertical: 12,
     borderRadius: 4,
-    alignItems: "center"
+    alignItems: 'center',
   },
   text: {
-    color: "$white",
+    color: '$white',
     fontSize: 16,
-    letterSpacing: 0
-  }
+    letterSpacing: 0,
+  },
 });

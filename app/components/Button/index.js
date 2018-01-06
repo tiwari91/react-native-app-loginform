@@ -1,4 +1,4 @@
-import SubmitButton from "./Button";
-import styles from "./styles";
+import SubmitButton from './SubmitButton';
+import styles from './styles';
 
 export { SubmitButton, styles };

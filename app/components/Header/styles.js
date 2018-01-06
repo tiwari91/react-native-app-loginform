@@ -11,7 +11,7 @@ export default EStyleSheet.create({
     color: '$headerTextColor',
     letterSpacing: 0,
     marginBottom: 12,
-    marginTop: 200,
+    marginTop: 80,
   },
   headerBorder: {
     height: 1,
